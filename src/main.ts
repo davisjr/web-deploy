@@ -136,10 +136,10 @@ export async function setupSSHPrivateKey(key: string) {
 export const mapOutput: ExecOptions = {
   listeners: {
     stdout: (data: Buffer) => {
-      console.log(data);
+      console.log(data.toString());
     },
     stderr: (data: Buffer) => {
-      console.error(data);
+      console.error(data.toString());
     },
   }
 };

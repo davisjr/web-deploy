@@ -3529,10 +3529,10 @@ async function setupSSHPrivateKey(key) {
 var mapOutput = {
   listeners: {
     stdout: (data) => {
-      console.log(data);
+      console.log(data.toString());
     },
     stderr: (data) => {
-      console.error(data);
+      console.error(data.toString());
     }
   }
 };
