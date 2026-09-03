@@ -3527,6 +3527,7 @@ async function setupSSHPrivateKey(key) {
   return privateKeyPath;
 }
 var mapOutput = {
+  silent: true,
   listeners: {
     stdout: (data) => {
       console.log(data.toString());
